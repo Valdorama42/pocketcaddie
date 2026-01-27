@@ -61,28 +61,25 @@
           </p>
         </div>
 
-        <div class={`${formCardClass} space-y-4 p-4 sm:p-5`}>
-          <form class="flex flex-col gap-3 sm:flex-row" on:submit|preventDefault={handleSubmit}>
+        <div class="rounded-[36px] bg-white p-6 shadow-[0_24px_60px_-38px_rgba(24,24,27,0.22)] sm:p-7">
+          <form class="flex flex-col gap-4" on:submit|preventDefault={handleSubmit}>
             <label class="sr-only" for="email">Sähköposti</label>
             <input
               id="email"
               type="email"
               placeholder="Sähköposti"
-              class="w-full flex-1 rounded-2xl border border-zinc-900/15 bg-white px-4 py-3 text-sm font-['Manrope'] text-zinc-900 shadow-sm outline-none transition placeholder:text-zinc-500 focus:border-lime-500 focus:ring-2 focus:ring-lime-200"
+              class="w-full rounded-2xl border border-zinc-200 bg-white px-5 py-4 text-base text-zinc-900 shadow-sm outline-none transition placeholder:text-zinc-400 focus:border-lime-300 focus:ring-2 focus:ring-lime-200"
               bind:value={email}
             />
             <button
               type="submit"
-              class="group relative overflow-hidden rounded-2xl bg-lime-300 px-5 py-3 text-sm font-['Manrope'] font-medium text-zinc-900 shadow-lg shadow-lime-500/35 transition hover:-translate-y-0.5 hover:bg-lime-200 hover:shadow-lime-400/50 active:translate-y-0 active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lime-300"
+              class="rounded-2xl bg-lime-300 px-5 py-4 text-base font-semibold text-zinc-900 shadow-lg shadow-lime-500/30 transition hover:-translate-y-0.5 hover:bg-lime-200 hover:shadow-lime-400/40 active:translate-y-0 active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lime-300"
             >
-              <span class="relative z-10">Liity jonoon</span>
-              <span
-                class="absolute inset-0 -translate-x-full bg-[linear-gradient(110deg,transparent,rgba(255,255,255,0.65),transparent)] transition-transform duration-700 group-hover:translate-x-full"
-              ></span>
+              Liity jonoon
             </button>
           </form>
-          <div class="space-y-3 text-xs">
-            <p class="text-zinc-500">Ei spämmiä. Lähetän vain julkaisu- ja beta-kutsut.</p>
+          <div class="space-y-4 pt-3 text-sm text-zinc-500">
+            <p>Ei spämmiä. Lähetän vain julkaisu- ja beta-kutsut.</p>
             {#if feedback}
               <div
                 class={`inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs font-medium ${
@@ -95,115 +92,86 @@
                 {feedback}
               </div>
             {/if}
-            <div class="flex items-center gap-3 text-zinc-600">
-              <div class="flex -space-x-2">
-                <span class="inline-flex h-6 w-6 rounded-full border border-white bg-zinc-200"></span>
-                <span class="inline-flex h-6 w-6 rounded-full border border-white bg-lime-200"></span>
-                <span class="inline-flex h-6 w-6 rounded-full border border-white bg-zinc-300"></span>
+            <div class="flex items-center gap-3 text-sm text-zinc-500">
+              <div class="flex -space-x-3">
+                <span class="inline-flex h-9 w-9 rounded-full border border-white bg-zinc-200"></span>
+                <span class="inline-flex h-9 w-9 rounded-full border border-white bg-lime-200"></span>
+                <span class="inline-flex h-9 w-9 rounded-full border border-white bg-zinc-300"></span>
               </div>
               <span>25+ golfaria jonossa</span>
             </div>
-            <div class="space-y-2">
-              <p class="text-[10px] font-medium uppercase tracking-[0.2em] text-zinc-500">
-                Julkaisuun
-              </p>
-              <div class="grid grid-cols-4 gap-3 rounded-2xl border border-zinc-200/70 bg-white/80 p-3 text-center">
-                <div>
-                  <p class="text-lg font-medium text-zinc-900">24</p>
-                  <p class="text-[10px] uppercase tracking-[0.2em] text-zinc-500">päivää</p>
-                </div>
-                <div>
-                  <p class="text-lg font-medium text-zinc-900">08</p>
-                  <p class="text-[10px] uppercase tracking-[0.2em] text-zinc-500">tuntia</p>
-                </div>
-                <div>
-                  <p class="text-lg font-medium text-zinc-900">12</p>
-                  <p class="text-[10px] uppercase tracking-[0.2em] text-zinc-500">min</p>
-                </div>
-                <div>
-                  <p class="text-lg font-medium text-zinc-900">04</p>
-                  <p class="text-[10px] uppercase tracking-[0.2em] text-zinc-500">sek</p>
-                </div>
-              </div>
+          </div>
+        </div>
+
+        <div class="rounded-[36px] bg-white px-6 py-6 shadow-[0_24px_60px_-38px_rgba(24,24,27,0.24)]">
+          <p class="text-[11px] uppercase tracking-[0.28em] text-zinc-500">Julkaisuun</p>
+          <div class="mt-5 grid grid-cols-4 gap-4 text-center">
+            <div>
+              <p class="text-3xl font-semibold text-zinc-900">24</p>
+              <p class="mt-1 text-[10px] uppercase tracking-[0.22em] text-zinc-500">päivää</p>
+            </div>
+            <div>
+              <p class="text-3xl font-semibold text-zinc-900">08</p>
+              <p class="mt-1 text-[10px] uppercase tracking-[0.22em] text-zinc-500">tuntia</p>
+            </div>
+            <div>
+              <p class="text-3xl font-semibold text-zinc-900">12</p>
+              <p class="mt-1 text-[10px] uppercase tracking-[0.22em] text-zinc-500">min</p>
+            </div>
+            <div>
+              <p class="text-3xl font-semibold text-zinc-900">04</p>
+              <p class="mt-1 text-[10px] uppercase tracking-[0.22em] text-zinc-500">sek</p>
             </div>
           </div>
         </div>
       </section>
 
       <section>
-        <ul class="grid gap-4 sm:grid-cols-3">
-          <li class={`${featureCardClass}`}>
-            <div class="absolute right-0 top-0 h-24 w-24 translate-x-8 -translate-y-8 rounded-full bg-lime-200/60 blur-2xl"></div>
-            <div class="space-y-4 p-5">
-              <div class="flex items-center gap-3">
-                <span
-                  class="flex h-10 w-10 items-center justify-center rounded-xl bg-lime-200 text-lg text-zinc-900"
-                >
-                  📏
-                </span>
-                <span class="text-xs font-medium uppercase tracking-[0.2em] text-zinc-500">
-                  Kantamat
-                </span>
-              </div>
-              <p class="text-lg font-medium leading-tight">
-                Metrit sisään, maila ulos
-              </p>
-              <p class="text-sm text-zinc-600">
-                Toimii metreillä ja antaa suosituksen sekunneissa.
-              </p>
+        <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <li class="rounded-[32px] bg-lime-50/70 p-6 shadow-[0_22px_55px_-35px_rgba(24,24,27,0.22)]">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-lime-200 text-zinc-900">
+              <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" />
+              </svg>
             </div>
-            <div class="h-2 w-full bg-lime-300"></div>
+            <h3 class="mt-5 text-xl font-semibold text-zinc-900">Kantamat</h3>
+            <p class="mt-3 text-sm leading-relaxed text-zinc-600">
+              Toimii metreillä ja antaa suosituksen sekunneissa.
+            </p>
           </li>
-          <li class={`${featureCardClass}`}>
-            <div class="absolute right-0 top-0 h-24 w-24 translate-x-8 -translate-y-8 rounded-full bg-lime-200/60 blur-2xl"></div>
-            <div class="space-y-4 p-5">
-              <div class="flex items-center gap-3">
-                <span
-                  class="flex h-10 w-10 items-center justify-center rounded-xl bg-lime-200 text-lg text-zinc-900"
-                >
-                  ⏱️
-                </span>
-                <span class="text-xs font-medium uppercase tracking-[0.2em] text-zinc-500">
-                  Rutiini
-                </span>
-              </div>
-              <p class="text-lg font-medium leading-tight">
-                10 sekunnin rutiini ennen lyöntiä
-              </p>
-              <p class="text-sm text-zinc-600">
-                Nopea muistilista: olosuhteet, makuu, ja oma lyöntikunto yhden napin painalluksella.
-              </p>
+          <li class="rounded-4xl bg-white p-6 shadow-[0_22px_55px_-35px_rgba(24,24,27,0.22)]">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-zinc-100 text-zinc-700">
+              <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M4 18V9" />
+                <path d="M10 18V5" />
+                <path d="M16 18v-7" />
+                <path d="M22 18v-4" />
+              </svg>
             </div>
-            <div class="h-2 w-full bg-lime-300"></div>
+            <h3 class="mt-5 text-xl font-semibold text-zinc-900">Analytiikka</h3>
+            <p class="mt-3 text-sm leading-relaxed text-zinc-600">
+              Näe mihin yleisimmin missaat ja kehity nopeammin.
+            </p>
           </li>
-          <li class={`${featureCardClass}`}>
-            <div class="absolute right-0 top-0 h-24 w-24 translate-x-8 -translate-y-8 rounded-full bg-lime-200/60 blur-2xl"></div>
-            <div class="space-y-4 p-5">
-              <div class="flex items-center gap-3">
-                <span
-                  class="flex h-10 w-10 items-center justify-center rounded-xl bg-lime-200 text-lg text-zinc-900"
-                >
-                  🎯
-                </span>
-                <span class="text-xs font-medium uppercase tracking-[0.2em] text-zinc-500">
-                  Missit
-                </span>
-              </div>
-              <p class="text-lg font-medium leading-tight">
-                Missit talteen, kehitys näkyviin
-              </p>
-              <p class="text-sm text-zinc-600">
-                Lyhyt / pitkä / vasen / oikea / griini — kaikki muistiin.
-              </p>
+          <li class="rounded-[32px] bg-white p-6 shadow-[0_22px_55px_-35px_rgba(24,24,27,0.22)]">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-zinc-100 text-zinc-700">
+              <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="6" />
+                <path d="M12 2v3" />
+                <path d="M12 19v3" />
+                <path d="M2 12h3" />
+                <path d="M19 12h3" />
+              </svg>
             </div>
-            <div class="h-2 w-full bg-lime-300"></div>
+            <h3 class="mt-5 text-xl font-semibold text-zinc-900">Missit talteen</h3>
+            <p class="mt-3 text-sm leading-relaxed text-zinc-600">
+              Lyhyt / pitkä / vasen / oikea / griini — kaikki muistiin.
+            </p>
           </li>
         </ul>
       </section>
 
-      <section
-        class={`${cardClass} p-4 sm:p-6`}
-      >
+      <section class={`${cardClass} p-4 sm:p-6`}>
         <div
           class="flex aspect-video w-full flex-col items-center justify-center gap-3 rounded-xl border border-dashed border-zinc-300/90 bg-[linear-gradient(135deg,rgba(244,244,245,0.7),rgba(255,255,255,0.2))] px-4 text-center"
         >
