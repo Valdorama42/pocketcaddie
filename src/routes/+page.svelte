@@ -56,8 +56,7 @@
             Lopeta mailan arpominen.
           </h1>
           <p class="max-w-2xl text-base leading-relaxed text-zinc-600 sm:text-lg">
-            Syötä mailojen kantamat kerran. Saat jokaiselle lyönnille nopean
-            mailasuosituksen ja näet sun yleisimmät missit.
+            PocketCaddie antaa jokaiselle lyönnille nopean mailasuosituksen ja auttaa tunnistamaan sun yleisimmät missit.
           </p>
         </div>
 
@@ -78,8 +77,8 @@
               Liity jonoon
             </button>
           </form>
-          <div class="space-y-4 pt-3 text-sm text-zinc-500">
-            <p>Ei spämmiä. Lähetän vain julkaisu- ja beta-kutsut.</p>
+          <div class="space-y-4 pt-3 text-xs text-zinc-500">
+            <p>Lähetän vain julkaisu- ja beta-kutsut. Ei spämmiä. </p>
             {#if feedback}
               <div
                 class={`inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs font-medium ${
@@ -92,14 +91,7 @@
                 {feedback}
               </div>
             {/if}
-            <div class="flex items-center gap-3 text-sm text-zinc-500">
-              <div class="flex -space-x-3">
-                <span class="inline-flex h-9 w-9 rounded-full border border-white bg-zinc-200"></span>
-                <span class="inline-flex h-9 w-9 rounded-full border border-white bg-lime-200"></span>
-                <span class="inline-flex h-9 w-9 rounded-full border border-white bg-zinc-300"></span>
-              </div>
-              <span>25+ golfaria jonossa</span>
-            </div>
+            
           </div>
         </div>
 
@@ -127,16 +119,16 @@
       </section>
 
       <section>
-        <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <li class="rounded-[32px] bg-lime-50/70 p-6 shadow-[0_22px_55px_-35px_rgba(24,24,27,0.22)]">
+        <ul class="grid gap-6 md:grid-cols-1 lg:grid-cols-3">
+          <li class="rounded-4xl bg-lime-50/70 p-6 shadow-[0_22px_55px_-35px_rgba(24,24,27,0.22)]">
             <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-lime-200 text-zinc-900">
               <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8">
                 <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" />
               </svg>
             </div>
-            <h3 class="mt-5 text-xl font-semibold text-zinc-900">Kantamat</h3>
+            <h3 class="mt-5 text-xl font-semibold text-zinc-900">Oma bägi</h3>
             <p class="mt-3 text-sm leading-relaxed text-zinc-600">
-              Toimii metreillä ja antaa suosituksen sekunneissa.
+              Syötä lyöntimittasi vain kerran. PocketCaddie oppii bägisi ja muistaa sen puolestasi.
             </p>
           </li>
           <li class="rounded-4xl bg-white p-6 shadow-[0_22px_55px_-35px_rgba(24,24,27,0.22)]">
@@ -148,12 +140,12 @@
                 <path d="M22 18v-4" />
               </svg>
             </div>
-            <h3 class="mt-5 text-xl font-semibold text-zinc-900">Analytiikka</h3>
+            <h3 class="mt-5 text-xl font-semibold text-zinc-900">Mailasuositus</h3>
             <p class="mt-3 text-sm leading-relaxed text-zinc-600">
-              Näe mihin yleisimmin missaat ja kehity nopeammin.
+              Saat tarkan mailasuosituksen sekunneissa – kuin oma caddie taskussasi.
             </p>
           </li>
-          <li class="rounded-[32px] bg-white p-6 shadow-[0_22px_55px_-35px_rgba(24,24,27,0.22)]">
+          <li class="rounded-4xl bg-white p-6 shadow-[0_22px_55px_-35px_rgba(24,24,27,0.22)]">
             <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-zinc-100 text-zinc-700">
               <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8">
                 <circle cx="12" cy="12" r="6" />
@@ -163,9 +155,9 @@
                 <path d="M19 12h3" />
               </svg>
             </div>
-            <h3 class="mt-5 text-xl font-semibold text-zinc-900">Missit talteen</h3>
+            <h3 class="mt-5 text-xl font-semibold text-zinc-900">Analytiikka</h3>
             <p class="mt-3 text-sm leading-relaxed text-zinc-600">
-              Lyhyt / pitkä / vasen / oikea / griini — kaikki muistiin.
+              Näet mihin yleisimmin missaat ja kehityt kierros kierrokselta.
             </p>
           </li>
         </ul>
