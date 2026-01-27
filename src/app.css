@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-@import "tailwindcss/preflight";
-@tailwind utilities;
-
-
 @import '@skeletonlabs/skeleton'; 
 @import '@skeletonlabs/skeleton-svelte'; 
 @import '@skeletonlabs/skeleton/themes/cerberus'; 
