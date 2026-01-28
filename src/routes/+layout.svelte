@@ -28,4 +28,15 @@
 		</nav>
 	</div>
 	{@render children()}
+	<footer
+		class="w-full border-t border-zinc-200/70 px-5 pb-10 pt-12 text-sm text-zinc-500 [background:linear-gradient(180deg,rgba(255,255,255,0.95)_0%,rgba(255,255,255,0.7)_35%,rgba(190,242,100,0.28)_100%)]"
+	>
+		<div class="mx-auto w-full max-w-5xl">
+			<div class="flex flex-col gap-2 pt-6">
+				<p class="font-medium text-zinc-600">PocketCaddie v0.1</p>
+				<p>Demo – ominaisuudet ja ulkoasu ovat vielä työn alla.</p>
+				<p>© 2026 PocketCaddie. Kaikki oikeudet pidätetään.</p>
+			</div>
+		</div>
+	</footer>
 </div>
