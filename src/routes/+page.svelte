@@ -1,5 +1,9 @@
 <svelte:head>
-  <title>PocketCaddie — Tulossa pian</title>
+  <title>PockerCaddie — Tulossa pian</title>
+  <meta name="description" content="PockerCaddie antaa jokaiselle lyönnille nopean mailasuosituksen ja auttaa tunnistamaan sun yleisimmät missit." />
+  <meta property="og:title" content="PockerCaddie — Tulossa pian" />
+  <meta property="og:description" content="PockerCaddie antaa jokaiselle lyönnille nopean mailasuosituksen ja auttaa tunnistamaan sun yleisimmät missit." />
+  <meta property="og:type" content="website" />
 </svelte:head>
 
 <script>

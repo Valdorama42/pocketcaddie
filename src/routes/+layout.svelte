@@ -1,16 +1,15 @@
 <script>
-	import favicon from '$lib/assets/favicon.svg';
 	import '../app.css';
 	
 
 	let { children } = $props();
 </script>
-
 <svelte:head>
-	<link rel="icon" href={favicon} />
+	<link rel="icon" href="/fav.png" />
 </svelte:head>
 
 <!-- Huom! rgba:n neljäs parametri kuvaa sitä, kuin tumma headerin vihree sävy on! -->
+
 <div
 	class="min-h-screen bg-white text-zinc-900 [background:radial-gradient(1200px_500px_at_20%_-10%,rgba(190,242,100,0.35),transparent),radial-gradient(900px_500px_at_100%_0%,rgba(24,24,27,0.06),transparent)]"
 >

@@ -3,13 +3,13 @@
     <div class="grid grid-cols-2 gap-4 sm:gap-6">
       <img
         src="/app-shot-1.png"
-        alt="MyCaddie sovelluksen näkymä"
+        alt="PockerCaddie sovelluksen näkymä"
         class="h-auto w-full rounded-[28px] shadow-[0_22px_55px_-35px_rgba(24,24,27,0.25)]"
         loading="lazy"
       />
       <img
         src="/app-shot-2.png"
-        alt="MyCaddie analytiikkanäkymä"
+        alt="PockerCaddie analytiikkanäkymä"
         class="h-auto w-full rounded-[28px] shadow-[0_22px_55px_-35px_rgba(24,24,27,0.25)]"
         loading="lazy"
       />
