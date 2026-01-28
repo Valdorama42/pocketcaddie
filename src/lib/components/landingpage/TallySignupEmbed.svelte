@@ -1,8 +1,8 @@
 <script>
   import { onMount } from 'svelte';
-  import { PUBLIC_TALLY_EMBED_URL } from '$env/static/public';
 
-  export let embedUrl = PUBLIC_TALLY_EMBED_URL;
+  export let embedUrl =
+    'https://tally.so/embed/EkxOoB?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1';
 
   const loadTallyEmbeds = () => {
     if (typeof window === 'undefined') {
