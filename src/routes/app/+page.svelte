@@ -117,10 +117,7 @@
   };
 </script>
 
-<div
-  class="min-h-screen bg-[#f7f6ef] text-zinc-900 [background:radial-gradient(1000px_500px_at_20%_-10%,rgba(190,242,100,0.15),transparent),radial-gradient(900px_500px_at_100%_0%,rgba(24,24,27,0.05),transparent)]"
->
-  <div class="mx-auto flex w-full max-w-md flex-col gap-10 px-6 pb-14 pt-12 font-['Manrope']">
+<main class="mx-auto flex w-full max-w-md flex-col gap-10 px-6 pb-14 pt-12 font-['Manrope']">
     <header class="flex items-start justify-between">
       <div>
         <p class="text-sm text-zinc-500">Hole 7 • Par 4</p>
@@ -169,7 +166,6 @@
               value={distance}
               on:input={handleDistanceInput}
             />
-            <span class="absolute bottom-1 left-1/2 h-3 w-3 -translate-x-1/2 rounded-full bg-rose-500"></span>
           </div>
           <p class="mt-2 text-sm text-zinc-500">meters</p>
         </div>
@@ -270,8 +266,7 @@
     >
       Save Shot
     </button>
-  </div>
-</div>
+</main>
 
 {#if activeMenu}
   <div class="fixed inset-0 z-40 flex items-end justify-center bg-black/10 px-4 pb-6 backdrop-blur-sm">
