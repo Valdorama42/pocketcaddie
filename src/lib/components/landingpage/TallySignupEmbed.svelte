@@ -51,7 +51,8 @@
       Aseta PUBLIC_TALLY_EMBED_URL .env-tiedostoon.
     </div>
   {/if}
-  <div class="pt-4 text-xs text-zinc-500">
-    <p>Lähetän vain julkaisu- ja beta-kutsut. Ei spämmiä. </p>
+  <div class="pt-4 space-y-2 text-xs text-zinc-500">
+    <p>Lähetän vain julkaisu- ja beta-kutsut. Ei spämmiä.</p>
+    <p>Vahvista sähköposti lomakkeessa, niin saat ilmoituksen heti kun beta aukeaa.</p>
   </div>
 </div>
