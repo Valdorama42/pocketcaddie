@@ -43,7 +43,7 @@
         marginheight="0"
         marginwidth="0"
         title="PocketCaddie ilmoittautumislomake"
-        class="w-full rounded-[24px] bg-white"
+        class="w-full rounded-3xl bg-white"
       ></iframe>
     </div>
   {:else}
