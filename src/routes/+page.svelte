@@ -1,8 +1,8 @@
 <svelte:head>
-  <title>PockerCaddie — Tulossa pian</title>
-  <meta name="description" content="PockerCaddie antaa jokaiselle lyönnille nopean mailasuosituksen ja auttaa tunnistamaan sun yleisimmät missit." />
-  <meta property="og:title" content="PockerCaddie — Tulossa pian" />
-  <meta property="og:description" content="PockerCaddie antaa jokaiselle lyönnille nopean mailasuosituksen ja auttaa tunnistamaan sun yleisimmät missit." />
+  <title>PocketCaddie — Tulossa pian</title>
+  <meta name="description" content="PocketCaddie antaa jokaiselle lyönnille nopean mailasuosituksen ja auttaa tunnistamaan yleisimmät missit." />
+  <meta property="og:title" content="PocketCaddie — Tulossa pian" />
+  <meta property="og:description" content="PocketCaddie antaa jokaiselle lyönnille nopean mailasuosituksen ja auttaa tunnistamaan yleisimmät missit." />
   <meta property="og:type" content="website" />
 </svelte:head>
 
@@ -22,7 +22,7 @@
             Lopeta mailan arpominen.
           </h1>
           <p class="max-w-2xl text-base leading-relaxed text-zinc-600 sm:text-lg">
-            PocketCaddie antaa jokaiselle lyönnille nopean mailasuosituksen ja auttaa tunnistamaan sun yleisimmät missit.
+            PocketCaddie antaa jokaiselle lyönnille nopean mailasuosituksen ja auttaa tunnistamaan yleisimmät missit.
           </p>
           <p class="max-w-2xl leading-relaxed text-zinc-600 sm:text-md">
             Jos kiinnostuit, voit ilmoittautua odotuslistalle, niin saat tiedon heti kun sovellus on saatavilla!

@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>PockerCaddie — Lyönti</title>
+  <title>PocketCaddie — Lyönti</title>
 </svelte:head>
 
 <script>
