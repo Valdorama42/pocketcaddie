@@ -24,6 +24,9 @@
           <p class="max-w-2xl text-base leading-relaxed text-zinc-600 sm:text-lg">
             PocketCaddie antaa jokaiselle lyönnille nopean mailasuosituksen ja auttaa tunnistamaan sun yleisimmät missit.
           </p>
+          <p class="max-w-2xl leading-relaxed text-zinc-600 sm:text-md">
+            Jos kiinnostuit, voit ilmoittautua odotuslistalle, niin saat tiedon heti kun sovellus on saatavilla!
+          </p>
         </div>
 
         {#if SIGNUP_VARIANT === 'tally'}

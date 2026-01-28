@@ -52,7 +52,6 @@
     </div>
   {/if}
   <div class="pt-4 space-y-2 text-xs text-zinc-500">
-    <p>Lähetän vain julkaisu- ja beta-kutsut. Ei spämmiä.</p>
-    <p>Vahvista sähköposti lomakkeessa, niin saat ilmoituksen heti kun beta aukeaa.</p>
+    <p>Lähetän vain julkaisu- ja beta-kutsut. Ei spämmiä/markkinointia.</p>
   </div>
 </div>
